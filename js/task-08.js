@@ -11,11 +11,10 @@ function handleSubmit(event){
     return;
   }
   
-  const myFormData = new FormData(event.target);
-
-   const formDataObj = {
+    const formDataObj = {
   email: email.value,
   password: password.value,
 }
   event.currentTarget.reset();
-}
+  console.log(formDataObj);
+ }

@@ -14,9 +14,9 @@ const images = [
 ];
 
 const list = document.querySelector(".gallery");
-list.style.display = "flex";
-list.style.justifyContent = "center";
-list.style.flexDirection = "column";
+list.style.display = "grid";
+list.style.gap = "100px";
+list.style.gridTemplateColumns = "repeat(3, 1fr)";
 const markup = images
 .map((image)=> `<li class="gallery-item"> <img src="${image.url}" alt="${image.alt}"/></li>`)
 .join(" ");
